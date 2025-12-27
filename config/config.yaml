@@ -4,3 +4,12 @@ data_ingestion:
     - "anime.csv"
     - "anime-with-synopsis.csv"
     - "animelist.csv"
+
+
+
+model:
+  embedding_size: 128
+  loss: binary_crossentropy
+  optimizer: Adam
+  metrics: ["mae", "mse"]
+  
