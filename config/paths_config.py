@@ -42,8 +42,12 @@ WEIGHTS_DIR = os.path.join(PROJECT_ROOT, "weights")
 MODEL_PATH = os.path.join(MODEL_DIR, "model.h5")
 ANIME_WEIGHTS_PATH = os.path.join(WEIGHTS_DIR,"anime_weights.pkl")
 USER_WEIGHTS_PATH = os.path.join(WEIGHTS_DIR,"user_weights.pkl")
-CHECKOUT_FILE_PATH = os.path.join(ARTIFACTS_DIR, "model_checkpoint", "weights.h5")
+CHECKPOINT_FILE_PATH = os.path.join(ARTIFACTS_DIR, "model_checkpoint", "weights.weights.h5")
 
 
 ################ CONFIG ################
 CONFIG_PATH = os.path.join(PROJECT_ROOT, "config", "config.yaml")
+
+
+################ API KEYS ################
+COMET_API_PATH = os.path.join(PROJECT_ROOT, "secret.json")

@@ -153,7 +153,7 @@ class DataProcessor:
             }
 
             for name, data in artifacts.items():
-                path = os.path.join(self.output_dir, f"{name}.joblib")
+                path = os.path.join(self.output_dir, f"{name}.pkl")
                 joblib.dump(data, path)
                 logger.info(f"Saved artifact: {path}")
 
