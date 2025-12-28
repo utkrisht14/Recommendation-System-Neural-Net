@@ -5,8 +5,8 @@ from src.model_training import ModelTraining
 
 
 if __name__ == "__main__":
-    data_processor = DataProcessor(read_yaml(CONFIG_PATH))
+    data_processor = DataProcessor(ANIMELIST_CSV,PROCESSED_DIR)
     data_processor.run()
 
-    model_trainer = ModelTraining(read_yaml(CONFIG_PATH))
+    model_trainer = ModelTraining(PROCESSED_DIR)
     model_trainer.train_model()
