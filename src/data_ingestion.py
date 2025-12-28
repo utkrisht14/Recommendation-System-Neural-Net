@@ -1,5 +1,3 @@
-import os
-import pandas as pd
 from google.cloud import storage
 from src.logger import get_logger
 from src.custom_exception import CustomException

@@ -1,1 +1,8 @@
 secret.json
+venv/
+artifacts/raw/
+artifacts/processed/
+artifacts/model/
+artifacts/weights/
+artifacts/model_checkpoint/
+MLOps_Project_2.egg-info/
